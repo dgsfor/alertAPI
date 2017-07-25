@@ -9,7 +9,8 @@ from django.conf import settings
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-url = 'http://112.74.76.186:8030/service/httpService/httpInterface.do'
+#短信接口地址
+url = 'http://1.1.1.1:8030/service/httpService/httpInterface.do'
 def send_sms(phone_list,sms_content):
         phone_list = str(",".join(phone_list))
         smsbody = {
